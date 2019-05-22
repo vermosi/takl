@@ -18,11 +18,11 @@ context('Checking a price for a chore on Takl', () => {
         cy.get('#chore-624').contains('Detail 1 car')
         cy.get('#chore-624 > div.chore-panel__top-section > div > div.chore-panel__top-section__main-row__price.ng-scope')
             .contains('$109')
-            cy.get('#chore-624').contains('Detail 1 car')
-            cy.get('div.chore-panel__top-section__main-row__price.ng-scope')
-                .contains('$109')
-            cy.get('#chore-625').contains('Detail 1 pickup truck or SUV')
-            cy.get('div.chore-panel__top-section__main-row__price.ng-scope')
-                .contains('$119')
+        cy.get('#chore-624').contains('Detail 1 car')
+        cy.get('div.chore-panel__top-section__main-row__price.ng-scope')
+            .contains('$109')
+        cy.get('#chore-625').contains('Detail 1 pickup truck or SUV')
+        cy.get('div.chore-panel__top-section__main-row__price.ng-scope')
+            .contains('$119')
     });
 });

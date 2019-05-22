@@ -14,7 +14,7 @@ context('Finding Takl website on Google', () => {
 	cy.get("body").click("left");
 	cy.get('.FPdoLc > center > [value="Google Search"]').click();
 	cy.get('.rc > .r > a')
-	.then(elements => {
+		.then(elements => {
 			for ( let i = 0 ; i < 1; i++){
 				cy.wrap(Cypress.$(elements[i]))
 				.should('have.attr', 'href', 'https://www.takl.com/');
